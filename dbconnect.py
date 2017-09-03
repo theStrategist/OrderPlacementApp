@@ -2,9 +2,11 @@ import pymysql
 
 
 def connection():
-    conn = pymysql.connect(host="192.168.1.105",
-                           user="sapta",
-                           passwd="sapta123",
-                           db="pythondb")
+    conn = pymysql.connect(host="eu-cdbr-west-01.cleardb.com",
+                           user="b23392502681a4",
+                           passwd="a421218d",
+                           db="heroku_d710c01591e6b23",
+						   autocommit=True)
+
     c = conn.cursor()
     return c, conn
