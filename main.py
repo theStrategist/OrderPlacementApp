@@ -1,6 +1,5 @@
 from flask import Flask, render_template
 from dbconnect import connection
-from pymysql import escape_string as thwart
 import gc
 import os
 
