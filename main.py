@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from dbconnect import connection
 from pymysql import escape_string as thwart
 import gc
+import os
 
 app = Flask(__name__)
 
@@ -41,4 +42,5 @@ def dashboard():
 
 
 if __name__ == "__main__":
-    app.run(debug='true')
+    #app.run(debug='true')
+    app.run(host='0.0.0.0', port=os.getenv('PORT'))
