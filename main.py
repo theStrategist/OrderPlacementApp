@@ -20,13 +20,13 @@ def dashboard():
         cancelled_order = c.fetchone()[0]
         summary['cancelled_order'] = cancelled_order
 
-        c.execute("SELECT COUNT(*) FROM orderlist WHERE status='pending'")
-        pending_order = c.fetchone()[0]
-        summary['pending_order'] = pending_order
+        #c.execute("SELECT COUNT(*) FROM orderlist WHERE status='pending'")
+        #pending_order = c.fetchone()[0]
+        #summary['pending_order'] = pending_order
 
-        c.execute("SELECT COUNT(*) FROM orderlist WHERE status='complete'")
-        complete_order = c.fetchone()[0]
-        summary['complete_order'] = complete_order
+        #c.execute("SELECT COUNT(*) FROM orderlist WHERE status='complete'")
+        #complete_order = c.fetchone()[0]
+        #summary['complete_order'] = complete_order
 
 
         # close database connection
