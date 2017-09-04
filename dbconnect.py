@@ -6,6 +6,7 @@ def connection():
                            user="b23392502681a4",
                            passwd="a421218d",
                            db="heroku_d710c01591e6b23",
+                           connect_timeout=120,
                            autocommit=True)
 
     c = conn.cursor()
