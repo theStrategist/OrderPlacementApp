@@ -9,6 +9,6 @@ echo "Setting up Heroku Git repo to: $HEROKU_APP_NAME"
 heroku git:remote -a $HEROKU_APP_NAME
 
 echo "Deploying application to Heroku..."
-git add .
+#git add .
 git commit -m "Deploying Flask App to Heroku"
 git push heroku master --force
