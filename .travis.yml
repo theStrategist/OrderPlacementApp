@@ -9,7 +9,7 @@ python:
 
 branches:
   only:
-    - dev
+    - master
 
 script:
   - sh .travis/deploy_dockerhub.sh
