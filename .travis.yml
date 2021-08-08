@@ -15,4 +15,4 @@ after_success:
   - sh .travis/deploy_heroku.sh
 
 notifications:
-    slack: 
+    slack:<id>:<token> 
